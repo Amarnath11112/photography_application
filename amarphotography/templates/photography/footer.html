@@ -1,0 +1,63 @@
+{% load static %}
+{% include 'photography/header.html' %}
+<html>
+<head>
+  <link href="{% static 'photography/css/footer.css' %}" rel="stylesheet">
+</head>
+
+<body>
+<!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6><b>About</b></h6>
+            <p class="text-justify">Photography is the process of recording an image – a photograph – on lightsensitive film or, in the case of digital photography, via a digital electronic or magnetic memory. The photograph is evident in nearly every aspect of modern life.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6><b>Categories</b></h6>
+            <ul class="footer-links">
+              <li><a href="#">Portrait photography</a></li>
+              <li><a href="#">Food photography</a></li>
+              <li><a href="#">Wedding photography</a></li>
+              <li><a href="#">Event photography</a></li>
+              <li><a href="#">Newborn photography</a></li>
+              <li><a href="#">Architecture photography</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6><b>Quick Links</b></h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by<a href="#">
+              amarphotography</a>.</p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="https://www.facebook.com/"><img src="{% static 'pg_users/img/facebook.png' %}" style="width=100%,height=100%"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="https://twitter.com/i/flow/login"><img src="{% static 'pg_users/img/twitter.png' %}"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="https://dribbble.com/tags/login"><img src="{% static 'pg_users/img/dribbble.png' %}"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="https://www.linkedin.com/login"><img src="{% static 'pg_users/img/linkedin.png' %}"><i class="fa fa-linkedin"></i></a></li>
+             <li><a class="whatsapp" href="https://web.whatsapp.com/"><img src="{% static 'pg_users/img/whatsup.png' %}"><i class="fa fa-whatsup"></i></a></li>
+              <li><a class="instagram" href="https://www.instagram.com/accounts/login/"><img src="{% static 'pg_users/img/instagram.jpeg' %}"><i class="fa instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+</body>
+</html>

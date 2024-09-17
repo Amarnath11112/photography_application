@@ -1,0 +1,83 @@
+{% load static %}
+{% include 'pg_users/index.html' %}
+{% include 'photography/header.html' %}
+<html>
+<head>
+<link href="{% static 'blog/css/blog.css' %}" rel="stylesheet">
+<style>
+.header {
+  background-image: url('{% static 'blog/img/blog_header.jpg' %}');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+}
+.header{
+  p{
+    color:red;
+    font-size:20px;
+    text-align:justify;
+  }
+  }
+.container {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+</style>
+
+</head>
+<body>
+<div class="header" style="height: 400px;">
+  <p style="text-align:right">Created by Amar</p>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div>
+        <img src="{% static 'blog/img/image1.jpg' %}" width="100%" height="100%">Image
+      </div>
+      <p>Some text..</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div>
+        <img src="{% static 'blog/img/image1.jpg' %}" width="100%" height="100%">Image
+      </div>
+      <p>Some text..</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div>
+        <img src="{% static 'blog/img/image1.jpg' %}" width="100%" height="30%">Image
+      </div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div>
+        <img src="{% static 'blog/img/image1.jpg' %}" width="100%" height="30%">Image
+      </div><br>
+        <div>
+        <img src="{% static 'blog/img/image1.jpg' %}" width="100%" height="30%">Image
+      </div><br>
+      <div>
+        <img src="{% static 'blog/img/image1.jpg' %}" width="100%" height="30%">Image
+      </div><br>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+</body>
+<div>
+  {% include 'photography/footer.html' %}
+</div>
+</html>

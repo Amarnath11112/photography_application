@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+{% load static %}
+{% include 'pg_users/index.html' %}
+{% include 'photography/header.html' %}
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="{% static 'photography/css/film.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<h2><u>Indian Wedding Movies and Films</u></h2>
+
+<div id="btnContainer">
+  <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button>
+  <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+</div>
+<br>
+
+<div class="row">
+  <div class="column">
+    <h2>Column 1</h2>
+    <video width="400" controls>
+      <source src="{% static 'photography/videos/video1.mp4' %}"  type="video/mp4">
+      <source src="{% static 'photography/videos/video1.ogg' %}" type="video/ogg">
+      Your browser does not support HTML video.
+    </video>
+    <p>
+    Video courtesy of
+    <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+    </p>
+  </div>
+  <div class="column">
+    <h2>Column 2</h2>
+    <video width="400" controls>
+      <source src="{% static 'photography/videos/video1.mp4' %}"  type="video/mp4">
+      <source src="{% static 'photography/videos/video1.ogg' %}" type="video/ogg">
+      Your browser does not support HTML video.
+    </video>
+    <p>
+    Video courtesy of
+    <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Column 3</h2>
+    <video width="400" controls>
+      <source src="{% static 'photography/videos/video1.mp4' %}"  type="video/mp4">
+      <source src="{% static 'photography/videos/video1.ogg' %}" type="video/ogg">
+      Your browser does not support HTML video.
+    </video>
+    <p>
+    Video courtesy of
+    <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+    </p>
+  </div>
+  <div class="column">
+    <h2>Column 4</h2>
+    <video width="400" controls>
+      <source src="{% static 'photography/videos/video1.mp4' %}"  type="video/mp4">
+      <source src="{% static 'photography/videos/video1.ogg' %}" type="video/ogg">
+      Your browser does not support HTML video.
+    </video>
+    <p>
+    Video courtesy of
+    <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <h2>Column 3</h2>
+    <video width="400" controls>
+      <source src="{% static 'photography/videos/video1.mp4' %}"  type="video/mp4">
+      <source src="{% static 'photography/videos/video1.ogg' %}" type="video/ogg">
+      Your browser does not support HTML video.
+    </video>
+    <p>
+    Video courtesy of
+    <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+    </p>
+  </div>
+  <div class="column">
+    <h2>Column 4</h2>
+    <video width="400" controls>
+      <source src="{% static 'photography/videos/video1.mp4' %}"  type="video/mp4">
+      <source src="{% static 'photography/videos/video1.ogg' %}" type="video/ogg">
+      Your browser does not support HTML video.
+    </video>
+    <p>
+    Video courtesy of
+    <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+    </p>
+  </div>
+</div>
+<div>
+  {% include 'photography/footer.html' %}
+</div>
+<script src="photography/js/film.js"></script>
+</body>
+</html>

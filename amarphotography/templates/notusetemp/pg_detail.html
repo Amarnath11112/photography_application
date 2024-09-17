@@ -1,0 +1,84 @@
+<head>
+<style>
+h1 {
+
+text-align: center;
+font-family: 'Lexend Deca', sans-serif;
+color: #2E475D;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+  vertical-align:top;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+
+{% include 'pg_users/index.html' %}
+
+<!--{% for pg in output %}-->
+<!--    <img src="/media/{{ pg.img_photo }}" style="width:1250px;height:500px;" align="middle">-->
+<!--    <h1>{{ pg.img_title }}</h1>-->
+<!--    <p>{{ pg.img_description }}</p>-->
+<!--{% endfor %}-->
+
+<!--{% include 'pg_users/test.html' %}-->
+<body>
+{% for pg in output %}
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+          <img src="/media/{{ pg.img_photo }}" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">{{ pg.img_description }}</div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+{% endfor %}
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+</div>
+</body>

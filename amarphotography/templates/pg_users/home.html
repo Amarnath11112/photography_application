@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+{% include 'pg_users/index.html' %}
+{% include 'photography/header.html' %}
+<html>
+<head>
+
+<style>
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+
+.container {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+img {
+max-width:100%;
+max-height:100%;
+float: left;
+}
+
+.text {
+font-size: 20px;
+padding-left: 20px;
+padding-top: -20%;
+float: left;
+}
+</style>
+
+</head>
+<body>
+<div class="container">
+      <div class="image" align="left">
+          <img src="{% static 'pg_users/img/image1.jpg' %}"  alt="Girl in a jacket" width="2000" height="1200">
+      </div>
+      <div class="text">
+        <h1>JOHN ATWOOD</h1>
+        <h2>Photographer</h2>
+        <p>has roots in a piece of classical Latin literature from 45 BC,<br>
+            Richard McClintock, <br>
+            a Latin professor at Hampden-Sydney College in Virginia,<br>
+            looked up one of the more <br>
+            obscure Latin words, consectetur,<br>
+            from a Lorem Ipsum passage,<br>
+            and going through the cites of the word<br>
+            in classical literature, <br>
+            discovered the undoubtable source.<br>
+            Lorem Ipsum comes from sections 1.10.32 and<br>
+            1.10.33 of "de Finibus Bonorum et Malorum" <br>
+            (The Extremes of Good and Evil) by Cicero, written in 45 BC.<br>
+            This book is a treatise on the theory of ethics, <br>
+            very popular during the Renaissance. <br>
+            The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",<br>
+            comes from a line in sect</p>
+      </div>
+</div>
+<div>
+    <br>
+</div>
+<div>
+    {% include 'photography/footer.html' %}
+</div>
+</body>
+</html>

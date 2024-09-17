@@ -1,0 +1,11 @@
+Set Up a amarphotography Project:
+==================================
+set up a new virtual environment using this command
+$ python3 -m venv env
+activate the virtual environment:
+$ source env/bin/activate
+Install Django and Pin Your Dependencies
+(env) $ python -m pip install django
+====================================
+refer below link for project installtion and setup
+https://realpython.com/django-setup/s
